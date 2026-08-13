@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Da Aurora</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    font-family: 'Cinzel', serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at top, #1a2438 0%, #0d1421 45%, #05070d 100%);
+    position: relative;
+    padding: 16px;
+    overflow-y: auto;
+  }
+
+  body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(circle at 20% 15%, rgba(230, 230, 255, 0.06) 0%, transparent 25%),
+      radial-gradient(circle at 80% 70%, rgba(255, 215, 0, 0.04) 0%, transparent 30%);
+    pointer-events: none;
+  }
+
+  .message-box {
+    position: relative;
+    max-width: 900px;
+    width: 96%;
+    min-height: 70vh;
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: linear-gradient(180deg, rgba(20, 22, 30, 0.97) 0%, rgba(8, 9, 13, 0.97) 100%);
+    border: 2px solid #f4c542;
+    border-radius: 14px;
+    padding: 44px 28px;
+    text-align: center;
+    box-shadow:
+      0 0 0 1px rgba(244, 197, 66, 0.2) inset,
+      0 0 40px rgba(244, 197, 66, 0.15),
+      0 10px 40px rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    scrollbar-width: thin;
+    scrollbar-color: #f4c542 rgba(255,255,255,0.05);
+  }
+
+  .message-box::-webkit-scrollbar {
+    width: 6px;
+  }
+  .message-box::-webkit-scrollbar-thumb {
+    background: #f4c542;
+    border-radius: 3px;
+  }
+
+  .bat-icon {
+    font-size: 2rem;
+    margin-bottom: 16px;
+    color: #f4c542;
+  }
+
+  .message-box h2 {
+    color: #f4c542;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+    text-shadow: 0 0 10px rgba(244, 197, 66, 0.4);
+  }
+
+  .message-box p {
+    color: #eae6da;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    letter-spacing: 0.5px;
+  }
+
+  .back-btn {
+    margin-top: 30px;
+    display: inline-block;
+    background: none;
+    border: 1px solid #f4c542;
+    color: #f4c542;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 9px 24px;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+
+  .back-btn:hover {
+    background: rgba(244, 197, 66, 0.12);
+  }
+</style>
+</head>
+<body>
+
+  <div class="message-box">
+    <div class="bat-icon">🦇</div>
+    <h2>Da Aurora</h2>
+    <p>
+      Ehy ma chi si vede! Un Batman invecchiato di un anno!!<br>
+      Auguri signor Guardiano della Notte! <br>
+      A parte gli scherzi, buon compleanno amore. Ti amo davvero tanto, spero che questo giorno
+      per te possa essere felice e che lo siano tutto il resto dei tuoi giorni, mesi e anni.
+      Spero che questo piccolo regalino ti sia piaciuto almeno un po'. <br>
+      Lo so lo so, Joker va ancora un po' per i fatti suoi ma chi lo sa, magari te la faccio 
+      sistemata per davvero quest'app se la vuoi.<br>
+      Mi manchi da morire, mi manca da morire passare il tempo con te.<br>
+      Qualche giorno fa mi sono ritrovata il regalo di natale che mi avevi fatto tra le mani<br>
+      (quello apri quando ecc.), e ti ho rivistə, mi è sembrato di averti ancora vicinə a me e 
+      mi sei mancatə, davvero tanto.<br>
+      Vorrei riuscire a dedicare davvero più tempo a me e te, a tutti noi quattro veramente
+      e non vedo l'ora che sia gennaio onestamente, per potervi abbracciare e tenervi tra le 
+      mie braccia e riempirvi di bacini.
+      Sei anche tu un pezzettino della mia anima e ti amo con tutto il mio cuore, mi dispiace se 
+      a volte ti faccio incazzare un pochetto, scusami davvero ma ti amo, davvero tanto.
+      Avevi paura che guardandoti in volto qualche mese forse fa, fosse cambiato qualcosa in me 
+      nei tuoi confronti ma no amore. Io ti amo per come sei dentro e vederti ha cambiato solo il
+      fatto di poterti immaginare al 100% per come sei e non un mezzo volto (e qualche volta devo 
+      ammettere, anche ghost). Spero prima o poi tu possa davvero sentirti al sicuro e a tuo 
+      agio con me perchè ai miei occhi non hai davvero nulla che non vada, sei perfettə, così come 
+      sei. Mi manchi Rob, mi manchi tanto e per una volta, o forse non solo questa non lo so, 
+      sono riuscita a contraddirti, visto? Sono qui con te, e lo sarò per tutto il giorno, non 
+      ti libererai di me così facilmente.<br>
+      Ti amo da morire amore, ti amo da vivere. Goditi questa giornata al meglio e prenditi il 
+      meglio di ciò  che la vita ha da offrirti, ti amo immensamente.
+
+    </p>
+    <a class="back-btn" href="BatMessaggio.html">Indietro</a>
+  </div>
+
+</body>
+</html>
